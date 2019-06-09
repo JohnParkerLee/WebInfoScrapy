@@ -1,0 +1,38 @@
+2019-Jun-09 16:53:26 log.py[line:146]/INFO/  Scrapy 1.6.0 started (bot: urlScrapy)
+2019-Jun-09 16:53:26 log.py[line:149]/INFO/  Versions: lxml 4.3.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:18:50) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.6.1, Platform Windows-10-10.0.17134-SP0
+2019-Jun-09 16:53:26 crawler.py[line:38]/INFO/  Overridden settings: {'BOT_NAME': 'urlScrapy', 'CONCURRENT_REQUESTS': 10, 'CONCURRENT_REQUESTS_PER_DOMAIN': 16, 'CONCURRENT_REQUESTS_PER_IP': 16, 'DOWNLOAD_DELAY': 3, 'NEWSPIDER_MODULE': 'urlScrapy.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['urlScrapy.spiders']}
+2019-Jun-09 16:53:26 telnet.py[line:60]/INFO/  Telnet Password: 7e29d4b510ea0765
+2019-Jun-09 16:53:26 middleware.py[line:48]/INFO/  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-Jun-09 16:53:27 _legacy.py[line:154]/CRITICAL/  Unhandled error in Deferred:
+2019-Jun-09 16:53:27 _legacy.py[line:154]/CRITICAL/  
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "E:\Users\JohnParker\Anaconda3\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "E:\urlScrapy\proxyPool\scrapy\middlewares.py", line 5, in <module>
+    from urlScrapy.proxyPool.ProxyPoolWorker import get_proxy_pool_worker
+ModuleNotFoundError: No module named 'urlScrapy.proxyPool'

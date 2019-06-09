@@ -1,0 +1,175 @@
+2019-Jun-09 17:56:51 log.py[line:146]/INFO/  Scrapy 1.6.0 started (bot: urlScrapy)
+2019-Jun-09 17:56:51 log.py[line:149]/INFO/  Versions: lxml 4.3.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:18:50) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.6.1, Platform Windows-10-10.0.17134-SP0
+2019-Jun-09 17:56:51 crawler.py[line:38]/INFO/  Overridden settings: {'BOT_NAME': 'urlScrapy', 'CONCURRENT_REQUESTS': 10, 'CONCURRENT_REQUESTS_PER_DOMAIN': 16, 'CONCURRENT_REQUESTS_PER_IP': 16, 'DOWNLOAD_DELAY': 5, 'NEWSPIDER_MODULE': 'urlScrapy.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['urlScrapy.spiders']}
+2019-Jun-09 17:56:51 telnet.py[line:60]/INFO/  Telnet Password: 7ae0b76f2b9997c8
+2019-Jun-09 17:56:51 middleware.py[line:48]/INFO/  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-Jun-09 17:56:52 middleware.py[line:48]/INFO/  Enabled downloader middlewares:
+['proxyPool.scrapy.middlewares.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'proxyPool.scrapy.middlewares.ProxyMiddleware',
+ 'proxyPool.scrapy.middlewares.CatchExceptionMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'proxyPool.scrapy.RandomUserAgentMiddleware.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-Jun-09 17:56:52 middleware.py[line:48]/INFO/  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-Jun-09 17:56:52 middleware.py[line:48]/INFO/  Enabled item pipelines:
+['urlScrapy.pipelines.UrlscrapyPipeline']
+2019-Jun-09 17:56:52 engine.py[line:256]/INFO/  Spider opened
+2019-Jun-09 17:56:52 logstats.py[line:48]/INFO/  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-Jun-09 17:56:52 telnet.py[line:74]/INFO/  Telnet console listening on 127.0.0.1:6023
+2019-Jun-09 17:56:52 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:57:13 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/robots.txt> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:57:13 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:57:34 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/robots.txt> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:57:34 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ (1146, "Table 'proxy.proxy' doesn't exist")
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\python\failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 135, in select_random_proxy
+    self.cursor.execute(select_sql)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'proxy.proxy' doesn't exist")
+2019-Jun-09 17:57:34 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ (1146, "Table 'proxy.proxy' doesn't exist")
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\python\failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 135, in select_random_proxy
+    self.cursor.execute(select_sql)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'proxy.proxy' doesn't exist")
+2019-Jun-09 17:57:34 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:57:34 redirect.py[line:41]/DEBUG/  Redirecting (302) to <GET http://www.alexa.cn/plugin/tips?k=fdXInqPqRdWztQduuHpxDT-IFVujt0kYja5ko10F-CY-IA9r1KX0zbMJZjbcG-Itycc7ti-CEVusvhtMzoYeejG5VbLNnDKpd27blcLfpHGbXpHnETJd7cbezfK-IqT-CpUlEzBRfNMVm37kIpl1OFinhMJTduRRSNgS03mrHaQIpmdxgqLuLw-IokuxOVmLrRGDHp4QZ4XQYWQBGAePvCODvcbiCA-M-M> from <GET http://www.alexa.cn/robots.txt>
+2019-Jun-09 17:57:34 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ (1146, "Table 'proxy.proxy' doesn't exist")
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <302 http://www.alexa.cn/robots.txt>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 135, in select_random_proxy
+    self.cursor.execute(select_sql)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'proxy.proxy' doesn't exist")
+2019-Jun-09 17:57:34 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ (1146, "Table 'proxy.proxy' doesn't exist")
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <302 http://www.alexa.cn/robots.txt>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 135, in select_random_proxy
+    self.cursor.execute(select_sql)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'proxy.proxy' doesn't exist")
+2019-Jun-09 17:57:34 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====

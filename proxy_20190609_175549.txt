@@ -1,0 +1,442 @@
+2019-Jun-09 17:55:51 log.py[line:146]/INFO/  Scrapy 1.6.0 started (bot: urlScrapy)
+2019-Jun-09 17:55:51 log.py[line:149]/INFO/  Versions: lxml 4.3.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:18:50) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.6.1, Platform Windows-10-10.0.17134-SP0
+2019-Jun-09 17:55:51 crawler.py[line:38]/INFO/  Overridden settings: {'BOT_NAME': 'urlScrapy', 'CONCURRENT_REQUESTS': 10, 'CONCURRENT_REQUESTS_PER_DOMAIN': 16, 'CONCURRENT_REQUESTS_PER_IP': 16, 'DOWNLOAD_DELAY': 5, 'NEWSPIDER_MODULE': 'urlScrapy.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['urlScrapy.spiders']}
+2019-Jun-09 17:55:51 telnet.py[line:60]/INFO/  Telnet Password: 5ded9c298678011d
+2019-Jun-09 17:55:51 middleware.py[line:48]/INFO/  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-Jun-09 17:55:52 middleware.py[line:48]/INFO/  Enabled downloader middlewares:
+['proxyPool.scrapy.middlewares.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'proxyPool.scrapy.middlewares.ProxyMiddleware',
+ 'proxyPool.scrapy.middlewares.CatchExceptionMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'proxyPool.scrapy.RandomUserAgentMiddleware.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-Jun-09 17:55:52 middleware.py[line:48]/INFO/  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-Jun-09 17:55:53 middleware.py[line:48]/INFO/  Enabled item pipelines:
+['urlScrapy.pipelines.UrlscrapyPipeline']
+2019-Jun-09 17:55:53 engine.py[line:256]/INFO/  Spider opened
+2019-Jun-09 17:55:53 logstats.py[line:48]/INFO/  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-Jun-09 17:55:53 telnet.py[line:74]/INFO/  Telnet console listening on 127.0.0.1:6023
+2019-Jun-09 17:55:53 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:55:53 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:55:53 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:55:53 redirect.py[line:41]/DEBUG/  Redirecting (302) to <GET http://www.alexa.cn/plugin/tips?k=ShuQU0QgAqI-HMWzx5o7U8JO1Vt8lNY9-ChkYVOXNOZflgS-HenV1PtD4YwgE7lazrUjdbQknOWxtU73PP5mldw19zlMmzHgm2yMt9UKudWnrih8zjSFqcU26wD1lNoja8XoIsppmiTehxNkhCLCNraZy5maXD6pohY6DOkL-Cs-H2k43vwugXi6nRKB3eRd5BD-HPzSshoGIECBpQDvMNk52K2A-O-O> from <GET http://www.alexa.cn/robots.txt>
+2019-Jun-09 17:55:53 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <302 http://www.alexa.cn/robots.txt>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:55:53 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <302 http://www.alexa.cn/robots.txt>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:55:53 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:55:59 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/plugin/tips?k=ShuQU0QgAqI-HMWzx5o7U8JO1Vt8lNY9-ChkYVOXNOZflgS-HenV1PtD4YwgE7lazrUjdbQknOWxtU73PP5mldw19zlMmzHgm2yMt9UKudWnrih8zjSFqcU26wD1lNoja8XoIsppmiTehxNkhCLCNraZy5maXD6pohY6DOkL-Cs-H2k43vwugXi6nRKB3eRd5BD-HPzSshoGIECBpQDvMNk52K2A-O-O> (referer: http://www.alexa.cn/robots.txt)
+2019-Jun-09 17:55:59 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <200 http://www.alexa.cn/plugin/tips?k=ShuQU0QgAqI-HMWzx5o7U8JO1Vt8lNY9-ChkYVOXNOZflgS-HenV1PtD4YwgE7lazrUjdbQknOWxtU73PP5mldw19zlMmzHgm2yMt9UKudWnrih8zjSFqcU26wD1lNoja8XoIsppmiTehxNkhCLCNraZy5maXD6pohY6DOkL-Cs-H2k43vwugXi6nRKB3eRd5BD-HPzSshoGIECBpQDvMNk52K2A-O-O>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:55:59 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <200 http://www.alexa.cn/plugin/tips?k=ShuQU0QgAqI-HMWzx5o7U8JO1Vt8lNY9-ChkYVOXNOZflgS-HenV1PtD4YwgE7lazrUjdbQknOWxtU73PP5mldw19zlMmzHgm2yMt9UKudWnrih8zjSFqcU26wD1lNoja8XoIsppmiTehxNkhCLCNraZy5maXD6pohY6DOkL-Cs-H2k43vwugXi6nRKB3eRd5BD-HPzSshoGIECBpQDvMNk52K2A-O-O>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:55:59 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/siterank/> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:05 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/siterank/2> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:56:05 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:05 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:05 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:10 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Babytree.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:56:10 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:10 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:10 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:10 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:11 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=4a453485UZ41SSqp2-Ix3LzJdr7InxBPc1GHamA9gbBGTuCz5LKueLN0Bj3VS2IQ-K&url=Babytree.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:56:11 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:11 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=e9b25641BYiU-Exd8ph0dp8gjHbOYGdRVNorL1na-EyTlQ6dQx6-EVynzu8uJV16ls-O&url=Babytree.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:56:11 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:11 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=39431782-EVIJv7fwLEnyLONFBBYZg-F3ZkzHNYdEYLfTo9U5DqoaSfDOYAOWKyL8-K&url=Babytree.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:56:11 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:11 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=5b4e72a7SDS9ZbI4SFoYHher1k5Di3SZr5KKfs-J5kz4OVn8rW4o-BB-JBbVPuqXMs-K&url=Babytree.com HTTP/1.1" 200 None
+2019-Jun-09 17:56:11 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Babytree.com>
+{'com_name': '北京众鸣世纪科技有限公司',
+ 'content_type': 'Content-Type: text/html; charset=utf-8',
+ 'country_code': 'CN',
+ 'country_rank': '26',
+ 'create_day': '2004-09-06',
+ 'domain': 'babytree.com',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '京ICP备11010348号-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.DNSV5.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comBabytree.com',
+ 'reg_server': 'ENOM, INC.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Babytree.com',
+ 'server': 'WHOIS.ENOM.COM',
+ 'server_ip': '59.110.149.245',
+ 'server_location': '北京市',
+ 'server_type': 'nginx',
+ 'web_home': 'www.babytree.com',
+ 'web_name': '众鸣世纪',
+ 'world_rank': '83',
+ 'world_uv_rank': '91'}
+2019-Jun-09 17:56:17 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Zhihu.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:56:17 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:17 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:17 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:17 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:18 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=9708b697EHiRWiFzZJagGQJw0rNX8dglWhl8jqN3OX8NaYTM3jJHdxvANjx6F44-M&url=Zhihu.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:56:18 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:18 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=15f8a09f53cmg-D-JdeE3TIZhCcRBDSSgSM9htNtFUAGe3TINpZojL-DmIhUBAD9Rs-O&url=Zhihu.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:56:18 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:18 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=d96a849ehYbOnLMh-Dd2J08gbDrQrQMbQUZ5LYzXE1JFtYp0TINejCK1xHyVqt34-K&url=Zhihu.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:56:18 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:19 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=39c63a8fqBpgZQuir6-Aq2FBG9EBMNtC-AQsGYJBgLLtjSGp1JPbsVMLfsZJ2znjs-L&url=Zhihu.com HTTP/1.1" 200 None
+2019-Jun-09 17:56:19 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Zhihu.com>
+{'com_name': '北京智者天下科技有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '25',
+ 'create_day': '2007-06-16',
+ 'domain': 'zhihu.com',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '京ICP备13052560号-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS3.DNSV5.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comZhihu.com',
+ 'reg_server': 'GODADDY.COM, LLC',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Zhihu.com',
+ 'server': 'WHOIS.GODADDY.COM',
+ 'server_ip': '118.89.204.190',
+ 'server_location': '天津市滨海新区',
+ 'server_type': 'ZWS',
+ 'web_home': 'www.zhihu.com',
+ 'web_name': '知乎',
+ 'world_rank': '82',
+ 'world_uv_rank': '81'}
+2019-Jun-09 17:56:24 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Cnblogs.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:56:24 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:24 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:24 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:25 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:25 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=18b7e131HPMCL7vstXYRed6YaKy25otvMCkxrDHAxfAzgmvw07NW2o7MaMfR7Ps-L&url=Cnblogs.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:56:25 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:25 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=ae9af2eapyaUrJaR9Qkd-DVylYZUUacATpuVVdHG-DOAF6-DGQTYDmMAZsD2Cb-FKyk-L&url=Cnblogs.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:56:25 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:25 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=82f18b3dykbR20o1tbhnGdeeGt55y0bhR7LDT-H-BghWm6bB6oLZpgLCbWZwr1fEg-M&url=Cnblogs.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:56:25 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:25 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=23aae6972qjh-Ji-JqSfLrxFe1EEeqdj5jVmGxcAWb28FOZoVQ-At-AsjGGb-AIV6KWw-M&url=Cnblogs.com HTTP/1.1" 200 None
+2019-Jun-09 17:56:25 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Cnblogs.com>
+{'com_name': '上海语程信息科技有限公司',
+ 'content_type': 'Content-Type: text/html; charset=utf-8',
+ 'country_code': 'CN',
+ 'country_rank': '24',
+ 'create_day': '2003-11-11',
+ 'domain': 'cnblogs.com',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '沪ICP备09004260号-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS3.DNSV4.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comCnblogs.com',
+ 'reg_server': '35 TECHNOLOGY CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Cnblogs.com',
+ 'server': 'WHOIS.35.COM',
+ 'server_ip': '47.96.240.190',
+ 'server_location': '浙江省杭州市',
+ 'server_type': '',
+ 'web_home': 'www.cnweblog.com',
+ 'web_name': '博客园',
+ 'world_rank': '78',
+ 'world_uv_rank': '75'}
+2019-Jun-09 17:56:30 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Hao123.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:56:30 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:30 proxyDBManager.py[line:144]/ERROR/  ===== select random_proxy exception =====
+ 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "E:\urlScrapy\proxyPool\dbManager\proxyDBManager.py", line 140, in select_random_proxy
+    proxy = str(data[1], encoding="utf-8").lower() + "://" + str(data[0], encoding="utf-8") + ":" + str(data[2])
+TypeError: 'NoneType' object is not subscriptable
+2019-Jun-09 17:56:30 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 None 】 =====
+2019-Jun-09 17:56:31 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:31 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=96d1a4d008eY2U2Bt0Hr591yhp2FXIZt7MW4bBQuACn-I3KqxelELzcFp0kNumJ8-M&url=Hao123.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:56:31 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:31 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=5b6e5fc5EgbPvncEbdIqLd-JcjAyoqiYhLVuMEWrJRHkwBGNKGSPiMjW-J1t5pMOY-L&url=Hao123.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:56:31 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:31 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=5e106bc2AJsf9nt5ZApqYOoquYB-I1wENVIEKLn1iMru8i13pAy2ZxeUTmr6hEUw-M&url=Hao123.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:56:31 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:56:31 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=34628be8s4HKKpQ5ZA5mxkf31eGgIXct72JYNkLrXGu0tC7Ft0u0OIgll3jcCwg-O&url=Hao123.com HTTP/1.1" 200 None
+2019-Jun-09 17:56:31 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Hao123.com>
+{'com_name': '北京百度网讯科技有限公司',
+ 'content_type': 'Content-Type: text/html;charset=UTF-8',
+ 'country_code': 'CN',
+ 'country_rank': '22',
+ 'create_day': '2000-11-15',
+ 'domain': 'hao123.com',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '京ICP证030173号-25',
+ 'icp_type': '企业',
+ 'nserver': 'DNS.BAIDU.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comHao123.com',
+ 'reg_server': 'MARKMONITOR INC.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Hao123.com',
+ 'server': 'WHOIS.MARKMONITOR.COM',
+ 'server_ip': '115.239.217.167',
+ 'server_location': '浙江省杭州市',
+ 'server_type': 'Apache',
+ 'web_home': 'www.hao123.com',
+ 'web_name': '网址之家',
+ 'world_rank': '65',
+ 'world_uv_rank': '58'}

@@ -1,0 +1,75 @@
+2019-Jun-09 18:08:34 log.py[line:146]/INFO/  Scrapy 1.6.0 started (bot: urlScrapy)
+2019-Jun-09 18:08:34 log.py[line:149]/INFO/  Versions: lxml 4.3.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:18:50) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.6.1, Platform Windows-10-10.0.17134-SP0
+2019-Jun-09 18:08:34 crawler.py[line:38]/INFO/  Overridden settings: {'BOT_NAME': 'urlScrapy', 'CONCURRENT_REQUESTS': 10, 'CONCURRENT_REQUESTS_PER_DOMAIN': 10, 'CONCURRENT_REQUESTS_PER_IP': 10, 'DOWNLOAD_DELAY': 5, 'NEWSPIDER_MODULE': 'urlScrapy.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['urlScrapy.spiders']}
+2019-Jun-09 18:08:34 telnet.py[line:60]/INFO/  Telnet Password: c1a57d4f354f3698
+2019-Jun-09 18:08:34 middleware.py[line:48]/INFO/  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-Jun-09 18:08:34 middleware.py[line:48]/INFO/  Enabled downloader middlewares:
+['proxyPool.scrapy.middlewares.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'proxyPool.scrapy.middlewares.ProxyMiddleware',
+ 'proxyPool.scrapy.middlewares.CatchExceptionMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'proxyPool.scrapy.RandomUserAgentMiddleware.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-Jun-09 18:08:34 middleware.py[line:48]/INFO/  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-Jun-09 18:08:35 middleware.py[line:48]/INFO/  Enabled item pipelines:
+['urlScrapy.pipelines.UrlscrapyPipeline']
+2019-Jun-09 18:08:35 engine.py[line:256]/INFO/  Spider opened
+2019-Jun-09 18:08:35 logstats.py[line:48]/INFO/  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-Jun-09 18:08:35 telnet.py[line:74]/INFO/  Telnet console listening on 127.0.0.1:6023
+2019-Jun-09 18:08:35 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 18:08:44 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/robots.txt> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 18:08:44 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 18:09:05 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/robots.txt> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 18:09:05 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 18:09:26 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/robots.txt> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 18:09:26 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 36.250.156.152 proxy  ===
+2019-Jun-09 18:09:26 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 36.250.156.152 proxy  ===
+2019-Jun-09 18:09:26 robotstxt.py[line:85]/ERROR/  Error downloading <GET http://www.alexa.cn/robots.txt>: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 18:09:26 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 18:09:35 logstats.py[line:48]/INFO/  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-Jun-09 18:09:38 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/siterank/> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://101.200.50.18:8118 】 =====
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://101.200.50.18:8118 】 =====
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://61.164.39.67:53281 】 =====
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 18:09:39 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/siterank/2> (failed 1 times): 503 Service Unavailable
+2019-Jun-09 18:09:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 18:09:59 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Cnblogs.com> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2019-Jun-09 18:09:59 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 18:10:07 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Babytree.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 18:10:07 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 18:10:14 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Zhihu.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 18:10:14 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://61.164.39.67:53281 】 =====
+2019-Jun-09 18:10:24 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/163.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 18:10:24 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 18:10:24 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 18:10:25 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=68a1a1fcBXbL6UuaylTVXfFKU3FN-GFKNTYp3fr-GW-GjXQsSxDmQX7bpv3SvzuL9s-O&url=163.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 18:10:25 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081

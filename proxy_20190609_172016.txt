@@ -1,0 +1,1462 @@
+2019-Jun-09 17:20:24 log.py[line:146]/INFO/  Scrapy 1.6.0 started (bot: urlScrapy)
+2019-Jun-09 17:20:24 log.py[line:149]/INFO/  Versions: lxml 4.3.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:18:50) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.6.1, Platform Windows-10-10.0.17134-SP0
+2019-Jun-09 17:20:24 crawler.py[line:38]/INFO/  Overridden settings: {'BOT_NAME': 'urlScrapy', 'CONCURRENT_REQUESTS': 10, 'CONCURRENT_REQUESTS_PER_DOMAIN': 16, 'CONCURRENT_REQUESTS_PER_IP': 16, 'DOWNLOAD_DELAY': 3, 'NEWSPIDER_MODULE': 'urlScrapy.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['urlScrapy.spiders']}
+2019-Jun-09 17:20:24 telnet.py[line:60]/INFO/  Telnet Password: 9614d8c53cd9007b
+2019-Jun-09 17:20:24 middleware.py[line:48]/INFO/  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-Jun-09 17:20:25 middleware.py[line:48]/INFO/  Enabled downloader middlewares:
+['proxyPool.scrapy.middlewares.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'proxyPool.scrapy.middlewares.ProxyMiddleware',
+ 'proxyPool.scrapy.middlewares.CatchExceptionMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'proxyPool.scrapy.RandomUserAgentMiddleware.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-Jun-09 17:20:25 middleware.py[line:48]/INFO/  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-Jun-09 17:20:25 middleware.py[line:48]/INFO/  Enabled item pipelines:
+['urlScrapy.pipelines.UrlscrapyPipeline']
+2019-Jun-09 17:20:25 engine.py[line:256]/INFO/  Spider opened
+2019-Jun-09 17:20:25 logstats.py[line:48]/INFO/  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-Jun-09 17:20:25 telnet.py[line:74]/INFO/  Telnet console listening on 127.0.0.1:6023
+2019-Jun-09 17:20:25 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:20:27 redirect.py[line:41]/DEBUG/  Redirecting (302) to <GET http://www.alexa.cn/plugin/tips?k=nINH8psv1fXh-JTyj8OHPzbCQooiaiHrkzFYsV9zdIqy3dl8RKoXvDVf-JHsnBMH1Xor9R9dNGwwKNLr0MVBxfKbxrqlWHV0L3r9G3lVMWv2oGp5cwKd-JyKcTQ8rFOchBgBBqbrHZyg1Pwcw2-AqV1iYJ0oPFmDJtiV6m5XFviNb7gdboDJGBl6MCrH361Ne1Aaz5sQ8NmvdO2Gd6byrvwqaA-M-M> from <GET http://www.alexa.cn/robots.txt>
+2019-Jun-09 17:20:27 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:20:29 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/plugin/tips?k=nINH8psv1fXh-JTyj8OHPzbCQooiaiHrkzFYsV9zdIqy3dl8RKoXvDVf-JHsnBMH1Xor9R9dNGwwKNLr0MVBxfKbxrqlWHV0L3r9G3lVMWv2oGp5cwKd-JyKcTQ8rFOchBgBBqbrHZyg1Pwcw2-AqV1iYJ0oPFmDJtiV6m5XFviNb7gdboDJGBl6MCrH361Ne1Aaz5sQ8NmvdO2Gd6byrvwqaA-M-M> (referer: http://www.alexa.cn/robots.txt)
+2019-Jun-09 17:20:29 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:20:34 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/siterank/> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:20:34 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:20:39 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/siterank/> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:20:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:20:42 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/siterank/> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:20:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:20:55 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Babytree.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:20:55 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://101.200.50.18:8118 】 =====
+2019-Jun-09 17:20:55 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:20:56 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=1f30dce61n3Z08p3MDV7eBqMSsi8l2tiEqOaZFfv1wEpxn5UJ-B6XPWQNAKPH6U4-M&url=Babytree.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:20:56 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:20:56 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=360e96253rf36F2WW959mqBTlUpj64W08CT23mowVFxuOGm5eIwgjYnx85ui3qo-N&url=Babytree.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:20:56 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:20:56 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=53ea2ec3RVvb3JBOoIt0FhedBHqBr3YP8tFeThLdAKUPt1dMfBu-IV8IuBrL9Oe4-K&url=Babytree.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:20:56 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:20:56 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=a26a3bfa9jkTuiVoYSdtVXsPRBaPl6SPU79-It0iPRgKTvIg96Tm2KPuLed08XNM-N&url=Babytree.com HTTP/1.1" 200 None
+2019-Jun-09 17:20:56 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Babytree.com>
+{'com_name': '北京众鸣世纪科技有限公司',
+ 'content_type': 'Content-Type: text/html; charset=utf-8',
+ 'country_code': 'CN',
+ 'country_rank': '26',
+ 'create_day': '2004-09-06',
+ 'domain': 'babytree.com',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '京ICP备11010348号-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.DNSV5.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comBabytree.com',
+ 'reg_server': 'ENOM, INC.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Babytree.com',
+ 'server': 'WHOIS.ENOM.COM',
+ 'server_ip': '59.110.149.245',
+ 'server_location': '北京市',
+ 'server_type': 'nginx',
+ 'web_home': 'www.babytree.com',
+ 'web_name': '众鸣世纪',
+ 'world_rank': '83',
+ 'world_uv_rank': '91'}
+2019-Jun-09 17:20:56 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Zhihu.com> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:20:56 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:21:04 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Soso.com> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:21:04 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:21:07 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/siterank/2> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:07 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:21:19 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Cnblogs.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:19 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:21:21 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Hao123.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:21 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:21:22 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Alipay.com> (failed 1 times): 503 Service Unavailable
+2019-Jun-09 17:21:22 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:21:25 logstats.py[line:48]/INFO/  Crawled 3 pages (at 3 pages/min), scraped 1 items (at 1 items/min)
+2019-Jun-09 17:21:27 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Csdn.net> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:21:27 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.64.70:8060 】 =====
+2019-Jun-09 17:21:27 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:21:28 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=e6ac8b9fzMHp1HzH4Hv9J5vrz1XwUWvC0v2Unb9ZgZCXImVxNXFfKEahmY6yS0g-M&url=Csdn.net&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:21:28 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:21:28 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=adf352183Er-FjaNPMKgjQ2mqFhdSLGUMAgEcxNui4c1cewqHzFOMwKP-Cxlpc5gY-L&url=Csdn.net&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:21:28 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:21:28 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=a1560149R-AQMlObVsH3BTJg-HuJAnynEFYx7Dp6szra25chlNi84O2o9nCM6ATW4-O&url=Csdn.net&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:21:28 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:21:28 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=3534530ezGeEDf9BtLFnVbrITzD6OV1PiKfAFL1wBOzTO038rsJBAddIb6XosWA-O&url=Csdn.net HTTP/1.1" 200 None
+2019-Jun-09 17:21:28 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Csdn.net>
+{'com_name': '北京创新乐知信息技术有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '13',
+ 'create_day': '1999-03-11',
+ 'domain': 'csdn.net',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '京ICP备09002463号-6',
+ 'icp_type': '企业',
+ 'nserver': 'VIP3.ALIDNS.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comCsdn.net',
+ 'reg_server': 'ALIBABA CLOUD COMPUTING (BEIJING) CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Csdn.net',
+ 'server': 'GRS-WHOIS.HICHINA.COM',
+ 'server_ip': '47.95.164.112',
+ 'server_location': '北京市',
+ 'server_type': 'openresty',
+ 'web_home': 'www.csdn.net',
+ 'web_name': 'CSDN软件开发网',
+ 'world_rank': '28',
+ 'world_uv_rank': '35'}
+2019-Jun-09 17:21:29 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Xinhuanet.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:29 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:21:32 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/163.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:32 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://101.200.50.18:8118 】 =====
+2019-Jun-09 17:21:36 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Bilibili.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:36 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:21:40 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Gmw.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:40 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:21:51 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/360.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:51 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:21:55 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Weibo.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:55 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:21:59 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Qq.com> (failed 1 times): 503 Service Unavailable
+2019-Jun-09 17:21:59 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:21:59 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Sina.com.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:21:59 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:22:03 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Jd.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:22:03 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:22:06 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Gmw.cn> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:22:06 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 17:22:08 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Sohu.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:22:08 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:22:08 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/360.cn> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:22:08 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:22:08 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:09 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=9a587cc36WXcO5slwvL-Dh2b4OeSqQiHJa4BojQLNX0oVgMT7HY9n5iTsn4-DUE10-M&url=360.cn&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:22:09 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:09 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=cc4e2bfdwHhIckasLZzAke7MhnqiBIAYkWgt-H8d6DlXl8bge1KbRWtV62x7LIaw-M&url=360.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:22:09 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:09 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=eec3c2950SPh4mRefgLOBiMnpfX0E0uAvnRvFoj446BoZ8nczcX5iE7Z9FPPrHc-N&url=360.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:22:09 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:10 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=157f1d974pPHacKGvmxkj1Ph-F080pC9T1zUXYiwrM8dP1ipO899ZagUT7bEmofs-M&url=360.cn HTTP/1.1" 200 None
+2019-Jun-09 17:22:10 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/360.cn>
+{'com_name': '北京奇虎科技有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '11',
+ 'create_day': '2003-03-17',
+ 'domain': '360.cn',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '京ICP备08010314号-6',
+ 'icp_type': '企业',
+ 'nserver': 'dns9.360safe.com',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.com360.cn',
+ 'reg_server': '厦门易名科技股份有限公司',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=360.cn',
+ 'server': 'WHOIS.CNNIC.CN',
+ 'server_ip': '36.110.213.49',
+ 'server_location': '北京市',
+ 'server_type': 'nginx',
+ 'web_home': 'www.360.cn<br/>www.360safe.com',
+ 'web_name': '360安全中心',
+ 'world_rank': '22',
+ 'world_uv_rank': '23'}
+2019-Jun-09 17:22:11 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Tmall.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:22:11 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:22:15 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Taobao.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:22:15 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:22:17 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Qq.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:22:17 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.227.154.184:9999 】 =====
+2019-Jun-09 17:22:17 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:17 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=27f0edae-A3HxT9tzdhURr2rc6zW0ZXJuhJedevFaf6uD-GIJtJ66ajx1V87aFtNA-O&url=Qq.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:22:17 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:18 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=78d0d6e1f5zJyIwCRVw3kOgaY3fbmfXAYorxAeWMhU2uPKgU-AkDfv1hrlsgYmQA-N&url=Qq.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:22:18 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:18 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=380dfb621IcBf4uV3eDgRI2oZ8gic-FB09IDSaVSZRi2jv2cElxYP-F0QNm5vssdE-M&url=Qq.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:22:18 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:18 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=7e392a36MAI8rObtUwXpLgqpmgtnRvmTT5NE9rDJ3vsr4z91b2MvwpJSTwB9T0M-M&url=Qq.com HTTP/1.1" 200 None
+2019-Jun-09 17:22:18 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Qq.com>
+{'com_name': '深圳市腾讯计算机系统有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '2',
+ 'create_day': '1995-05-04',
+ 'domain': 'qq.com',
+ 'http_type': 'HTTP/1.1 302 Moved Temporarily',
+ 'icp_no': '粤B2-20090059-5',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.QQ.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comQq.com',
+ 'reg_server': 'MARKMONITOR INC.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Qq.com',
+ 'server': 'WHOIS.MARKMONITOR.COM',
+ 'server_ip': '58.250.137.36',
+ 'server_location': '广东省深圳市',
+ 'server_type': 'stgw/1.3.10.6_1.13.5',
+ 'web_home': 'www.qq.com',
+ 'web_name': '腾讯网',
+ 'world_rank': '6',
+ 'world_uv_rank': '6'}
+2019-Jun-09 17:22:21 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Baidu.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:22:21 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:22:25 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Sina.com.cn> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:22:25 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:22:25 logstats.py[line:48]/INFO/  Crawled 6 pages (at 3 pages/min), scraped 4 items (at 3 items/min)
+2019-Jun-09 17:22:27 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Jd.com> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:22:27 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:22:33 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Weibo.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:22:33 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:22:42 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Tmall.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:22:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:22:43 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:43 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=6eb2a74c0ijEa-EBDk4FJM7W9auRqDV06wQWopYrdpC5IF58nTtPW9GNdFwwXR7k-K&url=Tmall.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:22:43 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:43 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=3b852b9e-Bjk8f12h2RDFE-BvQZi1VXAE6bDB7KDvESVfw5zkGGUKjuUgHUo2KkhY-N&url=Tmall.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:22:43 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:43 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=af38de67b0X89yPZF8AN7psG0IQGV-FymJctG4MDM1MCCY0k4JcKd8zJQXOIW7dA-L&url=Tmall.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:22:43 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:43 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=73e225e3XbXlmL76UVISR0cvpH3zVdLtWJ4G6ADCGJuic7Yj3LZW4hs19S-GF65A-O&url=Tmall.com HTTP/1.1" 200 None
+2019-Jun-09 17:22:43 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Tmall.com>
+{'com_name': '浙江天猫网络有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '4',
+ 'create_day': '1997-10-17',
+ 'domain': 'tmall.com',
+ 'http_type': 'HTTP/1.1 302 Found',
+ 'icp_no': '浙B2-20110446-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS4.TAOBAO.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comTmall.com',
+ 'reg_server': 'ALIBABA CLOUD COMPUTING (BEIJING) CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Tmall.com',
+ 'server': 'GRS-WHOIS.HICHINA.COM',
+ 'server_ip': '101.37.183.170',
+ 'server_location': '浙江省杭州市',
+ 'server_type': 'Tengine',
+ 'web_home': 'www.tmall.com',
+ 'web_name': '天猫',
+ 'world_rank': '8',
+ 'world_uv_rank': '7'}
+2019-Jun-09 17:22:50 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Bilibili.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:22:50 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:22:54 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Sohu.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:22:54 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.64.70:8060 】 =====
+2019-Jun-09 17:22:59 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/163.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:22:59 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:22:59 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:59 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=dbde220dzfb27XgtiUoogX9fl6gUjI0G3iMmTJfqvdsUjKpq9ULaYXiDuwnXMOs-K&url=163.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:22:59 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:22:59 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=fe07b22c4VSus2KswSa6CtYHGPGbgmbmSXo-H4pILU2pxhCqEfeIrip91x4CbJHs-K&url=163.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:22:59 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:23:00 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=6fcf7029apxtV2Kl7Rc5Tcb-GNKJQ2t1uVPn2jlW2RRkivV3-DGRyri39cgjVltnE-M&url=163.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:23:00 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:23:00 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=e95b8648AevWkNl3kU7L6abA2GDcFk7wFpXCn8SovmRinwwTKjgeZF6EL-Dbq-DbQ-M&url=163.com HTTP/1.1" 200 None
+2019-Jun-09 17:23:00 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/163.com>
+{'com_name': '广州网易计算机系统有限公司',
+ 'content_type': '',
+ 'country_code': 'CN',
+ 'country_rank': '19',
+ 'create_day': '1997-09-15',
+ 'domain': '163.com',
+ 'http_type': 'HTTP/1.1 302 Moved Temporarily',
+ 'icp_no': '粤B2-20090191-18',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.NEASE.NET',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.com163.com',
+ 'reg_server': 'MARKMONITOR INC.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=163.com',
+ 'server': 'WHOIS.MARKMONITOR.COM',
+ 'server_ip': '122.226.47.94',
+ 'server_location': '浙江省金华市',
+ 'server_type': 'Cdn Cache Server V2.0',
+ 'web_home': 'www.163.com',
+ 'web_name': '网易',
+ 'world_rank': '70',
+ 'world_uv_rank': '69'}
+2019-Jun-09 17:23:00 redirect.py[line:41]/DEBUG/  Redirecting (302) to <GET http://www.alexa.cn/plugin/tips?k=vzNwh2OZzsscYvF8Xl-FRM9itCflFRIAkAPAxVO6FfDuJQLwIGeECZYypgroAQSWJE4o-FEwWhdgysB3vjamy6Dy1v0bI1iVVm-FVsabxHxga5aMlj9Nyue59pGJ8Am0zZK104tG2dyuFmV9rkppC5eXtjkZOh2eZ9AQSCrIC6BBOl76Qny2j4fYA8dHlDX5y29q8uNJt2-Bk-BzTA2cjvSp9-F66DEHcN9BYlbmhW5jUuvOd-FeN2vF-Bx4fJBdL-B8Og9neS0jN1xfM2hJmoPixSl4ufUdMQ6Tv4gvGmx8FHALx6g8Hvc6tV0JKhVYv5cjVqaYCG3ymPjRUu74unpda5l537FCa4RHaM9VIxNw1kBKmT6AS-FE2Z-BpzJp5yGKMDXpO7Ur1xpjCTDFwTMsXafqWq1j5Y1QXUm4hzC7dcmN2IemII-N> from <GET http://www.alexa.cn/Alipay.com>
+2019-Jun-09 17:23:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:23:05 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Taobao.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:05 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:23:09 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Xinhuanet.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:09 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:23:13 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Baidu.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:13 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:23:20 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/siterank/2> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2019-Jun-09 17:23:20 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.64.70:8060 】 =====
+2019-Jun-09 17:23:21 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Hao123.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:21 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:23:24 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Cnblogs.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:24 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:23:25 logstats.py[line:48]/INFO/  Crawled 8 pages (at 2 pages/min), scraped 6 items (at 2 items/min)
+2019-Jun-09 17:23:29 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Xinhuanet.com> (failed 3 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:23:29 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 121.232.148.197 proxy  ===
+2019-Jun-09 17:23:29 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 121.232.148.197 proxy  ===
+2019-Jun-09 17:23:29 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:23:30 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Xinhuanet.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:23:32 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Soso.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:32 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:23:34 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Zhihu.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:34 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 17:23:41 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/plugin/tips?k=vzNwh2OZzsscYvF8Xl-FRM9itCflFRIAkAPAxVO6FfDuJQLwIGeECZYypgroAQSWJE4o-FEwWhdgysB3vjamy6Dy1v0bI1iVVm-FVsabxHxga5aMlj9Nyue59pGJ8Am0zZK104tG2dyuFmV9rkppC5eXtjkZOh2eZ9AQSCrIC6BBOl76Qny2j4fYA8dHlDX5y29q8uNJt2-Bk-BzTA2cjvSp9-F66DEHcN9BYlbmhW5jUuvOd-FeN2vF-Bx4fJBdL-B8Og9neS0jN1xfM2hJmoPixSl4ufUdMQ6Tv4gvGmx8FHALx6g8Hvc6tV0JKhVYv5cjVqaYCG3ymPjRUu74unpda5l537FCa4RHaM9VIxNw1kBKmT6AS-FE2Z-BpzJp5yGKMDXpO7Ur1xpjCTDFwTMsXafqWq1j5Y1QXUm4hzC7dcmN2IemII-N> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:41 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:23:45 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Taobao.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:45 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 36.250.156.152 proxy  ===
+2019-Jun-09 17:23:45 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 36.250.156.152 proxy  ===
+2019-Jun-09 17:23:45 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:23:45 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Taobao.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:46 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Cnblogs.com> (failed 3 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:23:46 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.124.86.249 proxy  ===
+2019-Jun-09 17:23:46 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.124.86.249 proxy  ===
+2019-Jun-09 17:23:46 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:23:46 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Cnblogs.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:23:53 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Soso.com> (failed 3 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:23:53 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.124.86.249 proxy  ===
+2019-Jun-09 17:23:53 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.124.86.249 proxy  ===
+2019-Jun-09 17:23:53 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:23:53 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Soso.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:23:53 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Baidu.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:53 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:23:53 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:23:53 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:23:53 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Baidu.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:23:57 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/siterank/2> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:23:57 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:24:00 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/plugin/tips?k=vzNwh2OZzsscYvF8Xl-FRM9itCflFRIAkAPAxVO6FfDuJQLwIGeECZYypgroAQSWJE4o-FEwWhdgysB3vjamy6Dy1v0bI1iVVm-FVsabxHxga5aMlj9Nyue59pGJ8Am0zZK104tG2dyuFmV9rkppC5eXtjkZOh2eZ9AQSCrIC6BBOl76Qny2j4fYA8dHlDX5y29q8uNJt2-Bk-BzTA2cjvSp9-F66DEHcN9BYlbmhW5jUuvOd-FeN2vF-Bx4fJBdL-B8Og9neS0jN1xfM2hJmoPixSl4ufUdMQ6Tv4gvGmx8FHALx6g8Hvc6tV0JKhVYv5cjVqaYCG3ymPjRUu74unpda5l537FCa4RHaM9VIxNw1kBKmT6AS-FE2Z-BpzJp5yGKMDXpO7Ur1xpjCTDFwTMsXafqWq1j5Y1QXUm4hzC7dcmN2IemII-N> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:24:00 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.227.154.184:9999 】 =====
+2019-Jun-09 17:24:00 scraper.py[line:158]/ERROR/  Spider error processing <GET http://www.alexa.cn/plugin/tips?k=vzNwh2OZzsscYvF8Xl-FRM9itCflFRIAkAPAxVO6FfDuJQLwIGeECZYypgroAQSWJE4o-FEwWhdgysB3vjamy6Dy1v0bI1iVVm-FVsabxHxga5aMlj9Nyue59pGJ8Am0zZK104tG2dyuFmV9rkppC5eXtjkZOh2eZ9AQSCrIC6BBOl76Qny2j4fYA8dHlDX5y29q8uNJt2-Bk-BzTA2cjvSp9-F66DEHcN9BYlbmhW5jUuvOd-FeN2vF-Bx4fJBdL-B8Og9neS0jN1xfM2hJmoPixSl4ufUdMQ6Tv4gvGmx8FHALx6g8Hvc6tV0JKhVYv5cjVqaYCG3ymPjRUu74unpda5l537FCa4RHaM9VIxNw1kBKmT6AS-FE2Z-BpzJp5yGKMDXpO7Ur1xpjCTDFwTMsXafqWq1j5Y1QXUm4hzC7dcmN2IemII-N> (referer: http://www.alexa.cn/siterank/)
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\urlScrapy\urlScrapy\spiders\url_dns.py", line 60, in parse_url
+    result[0] + "&url=" + search_url + "&host=&vcode="
+IndexError: list index out of range
+2019-Jun-09 17:24:01 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Hao123.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:01 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:24:01 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:24:01 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:24:02 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Hao123.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:09 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Bilibili.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:09 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 1.197.204.6 proxy  ===
+2019-Jun-09 17:24:09 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 1.197.204.6 proxy  ===
+2019-Jun-09 17:24:09 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:24:09 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Bilibili.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:14 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Sina.com.cn> (failed 3 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:24:14 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.124.86.249 proxy  ===
+2019-Jun-09 17:24:14 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.124.86.249 proxy  ===
+2019-Jun-09 17:24:14 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.64.70:8060 】 =====
+2019-Jun-09 17:24:14 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Sina.com.cn>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:24:17 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Zhihu.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:17 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:24:17 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:24:17 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:24:17 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Zhihu.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:17 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/siterank/3> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:24:17 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:24:25 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Weibo.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:25 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 180.118.86.237 proxy  ===
+2019-Jun-09 17:24:25 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 180.118.86.237 proxy  ===
+2019-Jun-09 17:24:25 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:24:25 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Weibo.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:25 logstats.py[line:48]/INFO/  Crawled 11 pages (at 3 pages/min), scraped 6 items (at 0 items/min)
+2019-Jun-09 17:24:29 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Youku.com> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:24:29 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:24:31 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Jd.com> (referer: http://www.alexa.cn/siterank/)
+2019-Jun-09 17:24:31 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:24:31 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:31 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=f824da024YliE3naUcfCfdURmDtbjsZYx-DoRPBIHTucyhyqleAelmWLQI-D-JPjhA-N&url=Jd.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:24:31 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:31 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=9d669360eYkoSB-Bumsr9ycdDyShvx4OUeb3LsjK3aVtYxT9aA5pWn7tY8wzpbzo-O&url=Jd.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:24:31 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:32 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=b72240c2dyXw7Ecgs1JyHgYiWYmGL7HU-A0k8MO65wYQsvGshLev-AzFShvIqZtOw-N&url=Jd.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:24:32 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:32 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=43344ec8L8gljAgEYnituIMosB5Whf78DY-DBtRchEKsg3jmZqAyEd6HlhRJZf8s-N&url=Jd.com HTTP/1.1" 200 None
+2019-Jun-09 17:24:32 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Jd.com>
+{'com_name': '北京京东叁佰陆拾度电子商务有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '6',
+ 'create_day': '1992-09-29',
+ 'domain': 'jd.com',
+ 'http_type': 'HTTP/1.1 302 Moved Temporarily',
+ 'icp_no': '京ICP备11041704号-3',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.JDCACHE.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comJd.com',
+ 'reg_server': 'MARKMONITOR INC.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Jd.com',
+ 'server': 'WHOIS.MARKMONITOR.COM',
+ 'server_ip': '61.174.55.1',
+ 'server_location': '浙江省金华市',
+ 'server_type': 'JDWS/2.0',
+ 'web_home': 'www.360buy.com',
+ 'web_name': '京东商城;京东多媒体网',
+ 'world_rank': '13',
+ 'world_uv_rank': '17'}
+2019-Jun-09 17:24:32 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Huanqiu.com> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:24:32 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:24:32 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:33 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=d5cd8244uzrearZOPDtIYm1UFh8lo25Lf0pblHvxdIdJZr1-FclvKP-FbmUgVNwjs-O&url=Huanqiu.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:24:33 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:33 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=fbe9a75cdRYNYa9nMKue-FjFW86bJVG6VN6x83O-FY8ff6C7Llk8rbvbFLEnHYBnc-O&url=Huanqiu.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:24:33 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:33 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=09a06ff24iutOKTx9GHZgMZzoPGJeaAepJwFOlPsgwphmWIUjz-BpW2OllHEdGrU-O&url=Huanqiu.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:24:33 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:33 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=f9974889sivacuHZRxpXcBkEMUWvpTREMUgEK-H08x2nimeBeahXfMUyb5-Hj99AA-L&url=Huanqiu.com HTTP/1.1" 200 None
+2019-Jun-09 17:24:33 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Huanqiu.com>
+{'com_name': '环球时报在线（北京）文化传播有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '43',
+ 'create_day': '2002-05-03',
+ 'domain': 'huanqiu.com',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '京ICP备12013816号-10',
+ 'icp_type': '企业',
+ 'nserver': 'NS3.DNSV4.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comHuanqiu.com',
+ 'reg_server': '35 TECHNOLOGY CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Huanqiu.com',
+ 'server': 'WHOIS.35.COM',
+ 'server_ip': '106.75.116.76',
+ 'server_location': '北京市',
+ 'server_type': 'openresty+',
+ 'web_home': 'www.huanqiu.com',
+ 'web_name': '环球网',
+ 'world_rank': '200',
+ 'world_uv_rank': '215'}
+2019-Jun-09 17:24:35 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Gmw.cn> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:35 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:24:35 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:24:35 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:24:35 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Gmw.cn>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:35 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Aliyun.com> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:24:35 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:24:35 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:35 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=b41256e4oKkVSpJP7yEGANKGvDhga4TysE73e42Vpt4AV6yqKydwQ4cIZPr9OOM-N&url=Aliyun.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:24:35 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:36 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=1e1ade67-Dv-DemRq5YxWPDRNyXo0gKhWfiGDMjbKUPimqtDaDJOANuT-JzHqkELx0-L&url=Aliyun.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:24:36 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:36 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=4e961dadXCXp-BBvOc2HAe0HEGxR1sAh1IoSQ9YBz-Ip0LVrR0Q4fbv7gTCHdNxHk-N&url=Aliyun.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:24:36 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:36 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=c05288ebj0zkhDashm5BcLGmaiAcAbqrj3aFAzJQx4SHyxWxTVd6MgrzYsVLDi0-L&url=Aliyun.com HTTP/1.1" 200 None
+2019-Jun-09 17:24:36 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Aliyun.com>
+{'com_name': '阿里云计算有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '42',
+ 'create_day': '2007-09-28',
+ 'domain': 'aliyun.com',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '浙B2-20080101-4',
+ 'icp_type': '企业',
+ 'nserver': 'NS3.ALIYUN.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comAliyun.com',
+ 'reg_server': 'ALIBABA CLOUD COMPUTING (BEIJING) CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Aliyun.com',
+ 'server': 'GRS-WHOIS.HICHINA.COM',
+ 'server_ip': '140.205.135.3',
+ 'server_location': '浙江省杭州市',
+ 'server_type': 'Tengine',
+ 'web_home': 'www.aliyun.com',
+ 'web_name': '阿里云.',
+ 'world_rank': '176',
+ 'world_uv_rank': '221'}
+2019-Jun-09 17:24:42 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Rednet.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:24:44 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Chinadaily.com.cn> (referer: http://www.alexa.cn/siterank/3)
+2019-Jun-09 17:24:44 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:24:44 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:44 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=e39cc4d4YRgz-Ccg359F5DwWKy4VY0p1fhtufRLw50vLbw6wv43-Gc-GvFLqN9KXls-K&url=Chinadaily.com.cn&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:24:44 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:45 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=a29a6116FOXrYixsp3LbestDfhF7tMQrf5fNN7s9uQff0Xx0Y8Qcog-EjsR42kms-M&url=Chinadaily.com.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:24:45 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:45 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=2ee6765bt8wXK8POAVDyXTWA8RNQp5btmRzBAjdCMn2FlcruEjljqmXj1hGGiAM-M&url=Chinadaily.com.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:24:45 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:24:45 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=30d9ef5bgtBu2WWswi2iwjaVC44srpvJhbKbpG-E5rnEbKntJlkk-I0qaldJ7btGI-O&url=Chinadaily.com.cn HTTP/1.1" 200 None
+2019-Jun-09 17:24:45 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Chinadaily.com.cn>
+{'com_name': '中报国际文化传媒（北京）有限公司',
+ 'content_type': 'Content-Type: text/html;charset=UTF-8',
+ 'country_code': 'CN',
+ 'country_rank': '75',
+ 'create_day': '1997-02-20',
+ 'domain': 'chinadaily.com.cn',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '京ICP备13028878号-6',
+ 'icp_type': '企业',
+ 'nserver': 'cns1.zdnscloud.net',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comChinadaily.com.cn',
+ 'reg_server': '阿里云计算有限公司（万网）',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Chinadaily.com.cn',
+ 'server': 'WHOIS.CNNIC.CN',
+ 'server_ip': '183.146.213.212',
+ 'server_location': '浙江省金华市',
+ 'server_type': 'smart',
+ 'web_home': 'www.chinadaily.com.cn',
+ 'web_name': '中国日报网',
+ 'world_rank': '503',
+ 'world_uv_rank': '348'}
+2019-Jun-09 17:24:46 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Douyu.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:46 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:24:59 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Eastday.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:24:59 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:25:06 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Smzdm.com> (referer: http://www.alexa.cn/siterank/3)
+2019-Jun-09 17:25:06 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.64.70:8060 】 =====
+2019-Jun-09 17:25:06 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:06 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=821e6bb1bHt8tN0VQi8JbWZmJHhQ-JziUWwcKO9qQiMlzN75H6-DHxEZBRXYBOYIA-L&url=Smzdm.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:25:06 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:07 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=f072625cG-IBf7eiYkLvL5RRTrJshG4gThL-Is6Dc8coCydQMXwCy04ojeKAQIY9I-N&url=Smzdm.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:25:07 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:07 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=a5d7e4ceLgRmJExvRa-J6hS5CkwXw76wsEVdzTtuJ-J93wHWf1z7nbAZgimfKsYII-O&url=Smzdm.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:25:07 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:07 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=eae8d83edSUk3ls8vGTOLRYDRMTk2hEI3dgHLsilV-DnUozHIzSfpevzi-DsGV1qw-K&url=Smzdm.com HTTP/1.1" 200 None
+2019-Jun-09 17:25:07 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Smzdm.com>
+{'com_name': '北京值得买科技股份有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '67',
+ 'create_day': '2010-06-30',
+ 'domain': 'smzdm.com',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '京ICP备12048526号-2',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.DNSV2.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comSmzdm.com',
+ 'reg_server': 'ENAME TECHNOLOGY CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Smzdm.com',
+ 'server': 'WHOIS.ENAME.COM',
+ 'server_ip': '58.58.81.228',
+ 'server_location': '山东省',
+ 'server_type': '',
+ 'web_home': 'www.smzdm.com',
+ 'web_name': '什么值得买',
+ 'world_rank': '385',
+ 'world_uv_rank': '471'}
+2019-Jun-09 17:25:07 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Nga.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:07 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:25:12 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Tencent.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:12 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:25:15 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/52pojie.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:15 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:25:18 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Huaban.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:18 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:25:20 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Amazon.cn> (referer: http://www.alexa.cn/siterank/3)
+2019-Jun-09 17:25:20 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:25:20 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:21 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=9cafc1c3siwg98DEAcA2jcjH76XWSV3JdGp2nG3Lbq-CJxjVcedl2RO3Ww-C2cJ1c-O&url=Amazon.cn&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:25:21 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:21 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=38799640i7gmUfEGmPPILOesfywUTMyBGbginrHx9UjV6TcLLj5dvj75EDCvBQw-L&url=Amazon.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:25:21 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:21 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=9be156a2sWoOok33zcGCfDtXu5mGzqfc9StX5WB2KZfZwPSd-FHwqja4UorYhcHg-K&url=Amazon.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:25:21 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:21 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=d33d3281NT6WidcgMHFaG-JDORfubsgPOP4TqzYRhX2tv09DkZ1JsFZVne0f4hE8-K&url=Amazon.cn HTTP/1.1" 200 None
+2019-Jun-09 17:25:21 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Amazon.cn>
+{'com_name': '亚马逊卓越有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '61',
+ 'create_day': '2003-03-17',
+ 'domain': 'amazon.cn',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '京ICP备11014788号-1',
+ 'icp_type': '企业',
+ 'nserver': 'pdns1.ultradns.net',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comAmazon.cn',
+ 'reg_server': '厦门易名科技股份有限公司',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Amazon.cn',
+ 'server': 'WHOIS.CNNIC.CN',
+ 'server_ip': '54.222.60.218',
+ 'server_location': '北京市',
+ 'server_type': 'Server',
+ 'web_home': 'www.amazon.cn',
+ 'web_name': '卓越亚马逊',
+ 'world_rank': '277',
+ 'world_uv_rank': '324'}
+2019-Jun-09 17:25:25 logstats.py[line:48]/INFO/  Crawled 17 pages (at 6 pages/min), scraped 12 items (at 6 items/min)
+2019-Jun-09 17:25:26 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Jrj.com.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:26 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.227.154.184:9999 】 =====
+2019-Jun-09 17:25:28 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/51sole.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:28 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.64.70:8060 】 =====
+2019-Jun-09 17:25:28 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Baike.com> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:25:28 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://101.200.50.18:8118 】 =====
+2019-Jun-09 17:25:33 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Ifeng.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:33 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:25:35 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/360doc.com> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2019-Jun-09 17:25:35 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:25:45 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/17ok.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:45 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:25:49 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Youdao.com> (referer: http://www.alexa.cn/siterank/3)
+2019-Jun-09 17:25:49 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:25:49 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:49 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=39021d19pJlWLdqbvnO4CDTg75zpZHOxonbbb7YnGzeoN9cpkIPztdG2sjZTvQA-N&url=Youdao.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:25:49 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:49 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=56d8a5c4z4k1-BQXQb7yyZaUzkITtSQ5eOhjKAp13bremuvj8yuM7nxuCfHnXlss-O&url=Youdao.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:25:49 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:49 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=b310e006iOYgtgUkv0wikOtGcmtReC4Shrj2gYobwTXbj-Ha3C0uSIFXQf9Mz11s-O&url=Youdao.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:25:49 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:25:50 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=38654478wuWp2T-Ik1-CCNXUE8mIbPEib0TOuzqlPGxwkHfcMR2NVXqvKSCJIKmkw-K&url=Youdao.com HTTP/1.1" 200 None
+2019-Jun-09 17:25:50 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Youdao.com>
+{'com_name': '北京网易有道计算机系统有限公司',
+ 'content_type': '',
+ 'country_code': 'CN',
+ 'country_rank': '51',
+ 'create_day': '2002-06-15',
+ 'domain': 'youdao.com',
+ 'http_type': '',
+ 'icp_no': '京ICP备10005211号-8',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.YODAO.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comYoudao.com',
+ 'reg_server': 'ALIBABA CLOUD COMPUTING (BEIJING) CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Youdao.com',
+ 'server': 'GRS-WHOIS.HICHINA.COM',
+ 'server_ip': '61.135.218.25',
+ 'server_location': '北京市',
+ 'server_type': '',
+ 'web_home': 'www.youdao.com',
+ 'web_name': '网易有道',
+ 'world_rank': '263',
+ 'world_uv_rank': '292'}
+2019-Jun-09 17:25:52 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Gamersky.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:52 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://101.200.50.18:8118 】 =====
+2019-Jun-09 17:25:55 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/3dmgame.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:55 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:25:58 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Caijing.com.cn> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:25:58 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:25:59 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Cnki.net> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:25:59 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:26:01 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Zol.com.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:26:01 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:26:06 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Toutiao.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:26:06 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:26:07 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Yy.com> (referer: http://www.alexa.cn/siterank/3)
+2019-Jun-09 17:26:07 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:26:07 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:07 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=310bba53yQ0BZ4f-GZuZhHP9nsfrs8c7n6JCVuex3kbpd74bqDteMo5n9mhrRMws-N&url=Yy.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:26:07 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:08 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=ca83aa99F2CuZmUXjD8DHJnK38V4pX468oai2nYJg6OipjxtbjJl3yhhkzyX-DE0-O&url=Yy.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:26:08 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:08 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=1a39843b66tazBi4FE5Y8RF-G4xEgsCvZ2y1Jyw9-GZgzfLIOJkvicm1-BIN9up5r0-N&url=Yy.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:26:08 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:08 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=87d24f5d49DTsy5WbFdxVCREWHIsXK4E5Zq6sUs5K8Ax9pkXwklQUJRDXt6KSg4-M&url=Yy.com HTTP/1.1" 200 None
+2019-Jun-09 17:26:08 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Yy.com>
+{'com_name': '广州华多网络科技有限公司',
+ 'content_type': 'Content-Type: text/html; charset=utf-8',
+ 'country_code': 'CN',
+ 'country_rank': '50',
+ 'create_day': '1994-01-18',
+ 'domain': 'yy.com',
+ 'http_type': 'HTTP/1.1 403 Forbidden',
+ 'icp_no': '粤ICP备09075143号-2',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.DUOWANNS.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comYy.com',
+ 'reg_server': 'HICHINA ZHICHENG TECHNOLOGY LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Yy.com',
+ 'server': 'GRS-WHOIS.HICHINA.COM',
+ 'server_ip': '125.88.179.100',
+ 'server_location': '广东省广州市',
+ 'server_type': 'nginx',
+ 'web_home': 'www.yy.com',
+ 'web_name': 'YYLive 网站',
+ 'world_rank': '247',
+ 'world_uv_rank': '297'}
+2019-Jun-09 17:26:08 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Youth.cn> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:26:08 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:26:08 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:09 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=539a6d98B9DHKZn7TnMyWJuJV-C-J73ttRe-J1CqglIcv-CuH6wbtb-C9pvBV7kupzPw-M&url=Youth.cn&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:26:09 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:09 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=3b9f7a7eQHqBKZcTD0aGXg6xm0NbWnkp9aEew9xsvD21xbQtSZc0FE-ESdo6qK5g-L&url=Youth.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:26:09 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:09 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=0dc56e6dmLAdO4T6GsMuN0tl88FW-EQm5M7wRvzVXgd82jy7kTnfBsGbptSlAOuw-O&url=Youth.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:26:09 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:09 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=38951c73VhtFnDJ8O8qI3uHxcKdmjtSf1XBG-A0DMI8LIsZuBy7XELsfWTbo5iIg-L&url=Youth.cn HTTP/1.1" 200 None
+2019-Jun-09 17:26:09 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Youth.cn>
+{'com_name': '中青网络科技（北京）有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '39',
+ 'create_day': '2003-03-10',
+ 'domain': 'youth.cn',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '京ICP备11020872号-17',
+ 'icp_type': '企业',
+ 'nserver': 'ns1.k618.cn',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comYouth.cn',
+ 'reg_server': '阿里云计算有限公司（万网）',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Youth.cn',
+ 'server': 'WHOIS.CNNIC.CN',
+ 'server_ip': '183.146.213.215',
+ 'server_location': '浙江省金华市',
+ 'server_type': 'nginx',
+ 'web_home': 'www.youth.cn',
+ 'web_name': '中国青年网',
+ 'world_rank': '207',
+ 'world_uv_rank': '145'}
+2019-Jun-09 17:26:09 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Panda.tv> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:26:09 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:26:10 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:10 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=600a2761HG4HpIf9ab17xrxx4rj-Bi09x0Q6FcHFkkUYgxo0KH6KZa6Fw2U1EQ4Y-O&url=Panda.tv&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:26:10 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:10 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=2dc639eaqMOKVMefUc2KVy-H6h8wnWMSCTApnNuGcLKE8GfShrzaLtQSCRDw9zyA-N&url=Panda.tv&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:26:10 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:10 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=d1f242b0fay3QwwYj7bZn4C-DjVSoperR3gc1GfM5wb2jmnwZvdOAYpw5mbzBmjA-K&url=Panda.tv&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:26:10 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:10 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=ed59db94to-H3VhUqCnjzV13U6xst6etSGx8JHFoFQJGypF5dTkz22awkmS5iaeo-M&url=Panda.tv HTTP/1.1" 200 None
+2019-Jun-09 17:26:10 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Panda.tv>
+{'com_name': '上海熊猫互娱文化有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '37',
+ 'create_day': '2010-03-20',
+ 'domain': 'panda.tv',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '沪ICP备15043293号-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS3.DNSV5.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comPanda.tv',
+ 'reg_server': 'ENOM, LLC',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Panda.tv',
+ 'server': 'WHOIS.ENOM.COM',
+ 'server_ip': '180.163.251.24',
+ 'server_location': '上海市',
+ 'server_type': 'nginx/1.9.15',
+ 'web_home': 'www.panda.tv',
+ 'web_name': '熊猫直播',
+ 'world_rank': '129',
+ 'world_uv_rank': '146'}
+2019-Jun-09 17:26:16 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Sohu.com> (failed 3 times): User timeout caused connection failure: Getting http://www.alexa.cn/Sohu.com took longer than 180.0 seconds..
+2019-Jun-09 17:26:16 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:26:16 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:26:16 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.227.154.184:9999 】 =====
+2019-Jun-09 17:26:16 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Sohu.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\python\failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 352, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting http://www.alexa.cn/Sohu.com took longer than 180.0 seconds..
+2019-Jun-09 17:26:25 logstats.py[line:48]/INFO/  Crawled 21 pages (at 4 pages/min), scraped 16 items (at 4 items/min)
+2019-Jun-09 17:26:26 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/China.com.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:26:26 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:26:34 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Zhanqi.tv> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:26:34 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:26:37 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/1688.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:26:37 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:26:39 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Jianshu.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:26:39 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:26:48 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Sogou.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:26:48 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:26:48 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Bing.com> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:26:48 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:26:48 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:48 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=259cf053aX-INSi8T-IQg7CruQWv6yVznI-AwVCZm0-AgLPSMvYm6nsa5XacRyzlHoA-K&url=Bing.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:26:48 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:48 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=e88cebc8lKck4-DtiDb2zZhfuMpD8PkhvDUwU47SENtTDd-DQdRxWQOrkUH76sqfg-K&url=Bing.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:26:48 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:49 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=fb94451bak8uDDlDfErdsepK-Bcrc3jrfLyOjRUZbl-GLit4eO5svcdy4Nkt5Cz5Y-L&url=Bing.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:26:49 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:49 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=cce9c31aw3SAvj061ikkegtZpL6-HG8gspxrA714kbivCPBp-DV0jU090tsNJZ0Yg-N&url=Bing.com HTTP/1.1" 200 None
+2019-Jun-09 17:26:49 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Bing.com>
+{'com_name': '微软移动联新互联网服务有限公司',
+ 'content_type': '',
+ 'country_code': 'CN',
+ 'country_rank': '29',
+ 'create_day': '1996-01-29',
+ 'domain': 'bing.com',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '京ICP备10036305号-11',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.MSEDGE.NET',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comBing.com',
+ 'reg_server': 'MARKMONITOR INC.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Bing.com',
+ 'server': 'WHOIS.MARKMONITOR.COM',
+ 'server_ip': '202.89.233.101',
+ 'server_location': '北京市海淀区',
+ 'server_type': 'Microsoft-IIS/10.0',
+ 'web_home': 'www.bing.com.cn<br/>www.bing135.com<br/>www.bingj.com<br/>www.windowssearch.com',
+ 'web_name': '必应搜索',
+ 'world_rank': '39',
+ 'world_uv_rank': '32'}
+2019-Jun-09 17:26:50 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Iqiyi.com> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:26:50 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:26:52 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Zhanqi.tv> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:26:52 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:26:56 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/1688.com> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:26:56 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:26:56 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:26:56 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=0dac54ffgDTkQ1lB-BuD2VMMRNyEKhCrtvJ88xb9ntyXRQIU4YdHHBNGlHkIRcwA-M&url=1688.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:26:56 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:27:00 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=7c48c65c3o5HDCxcUjCbGZDZZVfiDpJqZX4GteyvIIoCfOdoBw689Ch3SzQT2U8-K&url=1688.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:27:00 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:27:00 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=47d6c0a2JN4MjqBYa9cTax2-DIEZmirkgr99JpmYtxMOLCnw29P3EvkRzPNreRFY-N&url=1688.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:27:00 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:27:00 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=f1768b6fJlt9SGtm6B2xXDFbqYo758zzD9cIRD2-A-AX-JhpFStUK5cSxiOwVTUjTs-N&url=1688.com HTTP/1.1" 200 None
+2019-Jun-09 17:27:00 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/1688.com>
+{'com_name': '杭州阿里巴巴广告有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '35',
+ 'create_day': '1996-10-18',
+ 'domain': '1688.com',
+ 'http_type': 'HTTP/1.1 302 Found',
+ 'icp_no': '浙B2-20120091-2',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.ALIBABADNS.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.com1688.com',
+ 'reg_server': 'ALIBABA CLOUD COMPUTING (BEIJING) CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=1688.com',
+ 'server': 'GRS-WHOIS.HICHINA.COM',
+ 'server_ip': '101.37.183.170',
+ 'server_location': '浙江省杭州市',
+ 'server_type': 'Tengine',
+ 'web_home': 'www.1688.com',
+ 'web_name': '阿里1688',
+ 'world_rank': '127',
+ 'world_uv_rank': '168'}
+2019-Jun-09 17:27:03 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Google.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:27:03 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:27:06 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Tianya.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:27:06 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:27:14 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Iqiyi.com> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2019-Jun-09 17:27:14 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:27:21 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Jianshu.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:27:21 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.227.154.184:9999 】 =====
+2019-Jun-09 17:27:25 logstats.py[line:48]/INFO/  Crawled 23 pages (at 2 pages/min), scraped 18 items (at 2 items/min)
+2019-Jun-09 17:27:26 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Sogou.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:27:26 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://101.200.50.18:8118 】 =====
+2019-Jun-09 17:27:28 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Tianya.cn> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:27:28 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:27:29 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/China.com.cn> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:27:29 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:27:30 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Cnki.net> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:27:30 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.227.154.184:9999 】 =====
+2019-Jun-09 17:27:36 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/3dmgame.com> (failed 2 times): 503 Service Unavailable
+2019-Jun-09 17:27:36 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.227.154.184:9999 】 =====
+2019-Jun-09 17:27:38 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Toutiao.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:27:38 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:27:42 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Zol.com.cn> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:27:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:27:44 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Google.cn> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:27:44 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:27:48 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Gamersky.com> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:27:48 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:27:51 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/17ok.com> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:27:51 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:27:52 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/So.com> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:27:52 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:27:54 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Caijing.com.cn> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:27:54 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:28:03 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Jrj.com.cn> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:28:03 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:28:08 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/360doc.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:08 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:28:11 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Ifeng.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:11 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.16.95:9999 】 =====
+2019-Jun-09 17:28:12 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Baike.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:12 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:28:19 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/51sole.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:19 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:28:22 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Nga.cn> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:28:22 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:28:25 logstats.py[line:48]/INFO/  Crawled 23 pages (at 0 pages/min), scraped 18 items (at 0 items/min)
+2019-Jun-09 17:28:27 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Huaban.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:27 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 17:28:29 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Douyu.com> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:28:29 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 17:28:31 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/52pojie.cn> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:31 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:28:34 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/So.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:34 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:28:42 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Nga.cn> (failed 3 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:28:42 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 121.232.148.197 proxy  ===
+2019-Jun-09 17:28:42 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 121.232.148.197 proxy  ===
+2019-Jun-09 17:28:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 17:28:42 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Nga.cn>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:28:42 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Tencent.com> (referer: http://www.alexa.cn/siterank/3)
+2019-Jun-09 17:28:42 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 17:28:42 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:28:43 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=67111d16ddRTomlCnb89vziRxiohVnygHYWf-DIdtIkpL6D6-Hnk37InbQ-HSFWPMo-O&url=Tencent.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:28:43 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:28:43 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=7b595a34o1TkdCv0fbuaxmi5YAzyln1GNeYkPz6khajHj-J-BvpxTmRuiIwe1mLiI-L&url=Tencent.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:28:43 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:28:43 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=91cce6527h0icl4cjCflfKlmr-Hh-BN-BFD5V-HtyiYiaRFKdTFAZwAoXbWqph0GTps-M&url=Tencent.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:28:43 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:28:43 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=f00e539eD7bixOV4ubiGL5WuHwbeW8h9Zth5syAn3fIajxDFIt0TdKIHrIDCgzc-O&url=Tencent.com HTTP/1.1" 200 None
+2019-Jun-09 17:28:43 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Tencent.com>
+{'com_name': '深圳市腾讯计算机系统有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '71',
+ 'create_day': '1998-09-14',
+ 'domain': 'tencent.com',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '粤B2-20090059-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.QQ.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comTencent.com',
+ 'reg_server': 'MARKMONITOR INC.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Tencent.com',
+ 'server': 'WHOIS.MARKMONITOR.COM',
+ 'server_ip': '210.22.248.181',
+ 'server_location': '上海市',
+ 'server_type': 'NWS_UGC_HY',
+ 'web_home': 'izhuye.tencent.com<br/>izhuye.tencent.com.cn',
+ 'web_name': '腾讯官方网',
+ 'world_rank': '464',
+ 'world_uv_rank': '470'}
+2019-Jun-09 17:28:45 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Eastday.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:45 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.72.54:8060 】 =====
+2019-Jun-09 17:28:53 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Rednet.cn> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:53 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:28:56 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Youku.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:28:56 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.124.86.249:9999 】 =====
+2019-Jun-09 17:28:57 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/52pojie.cn> (referer: http://www.alexa.cn/siterank/3)
+2019-Jun-09 17:28:57 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:28:57 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:28:57 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=42da4cccra-CxKcxHfawC9NmWRsxojV6xRS6oREHJE8iLAfYm0i07jSVSomecN4o-M&url=52pojie.cn&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:28:57 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:28:58 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=ea26398dFfSzA99KaKdbSEnA9KU04l7whLbAQtuXO0NqVIGvP9al5xUmzfZsEdg-N&url=52pojie.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:28:58 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:28:58 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=a331c285YecfxZmhw4jcmx2QueUjYVcZsGCxHFtiiKcAUmAIyi9IqjghhbS72EU-L&url=52pojie.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:28:58 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:28:58 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=1229c24609ocGh5rwovaSiSs1Yx0Ye8cdQFLYqo7LrS1AmG60AX22Yq-HSx-EPJFI-K&url=52pojie.cn HTTP/1.1" 200 None
+2019-Jun-09 17:28:58 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/52pojie.cn>
+{'com_name': '闻功岭',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '74',
+ 'create_day': '2008-03-11',
+ 'domain': '52pojie.cn',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '京ICP备16042023号-1',
+ 'icp_type': '个人',
+ 'nserver': 'ns1.dnsv2.com',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.com52pojie.cn',
+ 'reg_server': '阿里云计算有限公司（万网）',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=52pojie.cn',
+ 'server': 'WHOIS.CNNIC.CN',
+ 'server_ip': '61.240.144.177',
+ 'server_location': '河北省石家庄市',
+ 'server_type': '360wzws',
+ 'web_home': 'www.52pojie.cn',
+ 'web_name': '吾爱破解',
+ 'world_rank': '398',
+ 'world_uv_rank': '478'}
+2019-Jun-09 17:29:02 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/So.com> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:29:02 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:29:02 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:02 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=28773031eyYanzpqVkz7WXNJQMA25QXVJ-DWJRusYTutz2WMc0-Idvj18l0zslMS4-L&url=So.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:29:02 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:02 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=bfb599edn-EdflCF-HaczEZdh8iYHWBX6Hi92DHxOxBstONIHqekJy2ndrWZj1Pqs-K&url=So.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:29:02 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:02 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=f0077b813ISBK-IusHrIgomHXXB8-Ckkkzw8-CagC5Uu4ah-IU4UeBxIY5FHk5TUc-Iw-M&url=So.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:29:02 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:03 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=8ed53b7cXWlO8X-Gm0jGzrPaQItNAjZr9G45D50QPVTnUdf8lfKlF4GfgPDS-Gxx4-N&url=So.com HTTP/1.1" 200 None
+2019-Jun-09 17:29:03 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/So.com>
+{'com_name': '北京奇虎科技有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '28',
+ 'create_day': '1999-04-15',
+ 'domain': 'so.com',
+ 'http_type': 'HTTP/1.1 302 Moved Temporarily',
+ 'icp_no': '京ICP备08010314号-19',
+ 'icp_type': '企业',
+ 'nserver': 'DNS1.360SAFE.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comSo.com',
+ 'reg_server': 'ENAME TECHNOLOGY CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=So.com',
+ 'server': 'WHOIS.ENAME.COM',
+ 'server_ip': '171.8.167.22',
+ 'server_location': '河南省郑州市',
+ 'server_type': 'openresty',
+ 'web_home': 'www.so.com',
+ 'web_name': '360搜索',
+ 'world_rank': '97',
+ 'world_uv_rank': '83'}
+2019-Jun-09 17:29:04 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Huaban.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:04 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:04 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:04 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 17:29:04 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Huaban.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:09 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Douyu.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:09 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:09 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:09 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://27.188.64.70:8060 】 =====
+2019-Jun-09 17:29:09 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Douyu.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:15 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Youku.com> (failed 3 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:29:15 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.124.86.249 proxy  ===
+2019-Jun-09 17:29:15 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.124.86.249 proxy  ===
+2019-Jun-09 17:29:15 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:29:15 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Youku.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:29:20 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/51sole.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:20 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:20 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:20 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://121.232.148.197:9000 】 =====
+2019-Jun-09 17:29:20 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/51sole.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:23 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Douban.com> (failed 1 times): User timeout caused connection failure: Getting http://www.alexa.cn/Douban.com took longer than 180.0 seconds..
+2019-Jun-09 17:29:23 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.227.154.184:9999 】 =====
+2019-Jun-09 17:29:24 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Baike.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:24 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:24 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:24 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:29:24 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Baike.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:25 logstats.py[line:48]/INFO/  Crawled 26 pages (at 3 pages/min), scraped 21 items (at 3 items/min)
+2019-Jun-09 17:29:26 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/360doc.com> (referer: http://www.alexa.cn/siterank/3)
+2019-Jun-09 17:29:26 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://113.110.45.45:9999 】 =====
+2019-Jun-09 17:29:26 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:26 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=d939528eEb5llLK0aAzeSrAGOHo3R4C9aqq0vl6VpBSfMBBt1npAoeCcxXznppY-L&url=360doc.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:29:26 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:26 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=fe54b312zjvU2-ER3wrlhCOPEWOi9lF4eIrL6600sTDBGz9QyOhBB-EBJUhQSOx6k-K&url=360doc.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:29:26 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:27 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=8e63fb7aUMsJE8xXwPc6LujSthF-EqfNZuCTtKYzh6-E-EoAgayM3q-Jnn64euHsXMI-L&url=360doc.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:29:27 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:27 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=4ca0139dayjJ5BTi2KA1IvyNkmlsIQL2m3OF8U5bykmN8m0lGvZaK6D3rAzQmYQ-O&url=360doc.com HTTP/1.1" 200 None
+2019-Jun-09 17:29:27 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/360doc.com>
+{'com_name': '北京六智信息技术股份有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '63',
+ 'create_day': '2005-05-25',
+ 'domain': '360doc.com',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '京ICP备05038915号-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.DNSV4.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.com360doc.com',
+ 'reg_server': 'HICHINA ZHICHENG TECHNOLOGY LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=360doc.com',
+ 'server': 'GRS-WHOIS.HICHINA.COM',
+ 'server_ip': '101.37.183.144',
+ 'server_location': '浙江省杭州市',
+ 'server_type': 'Tengine',
+ 'web_home': 'www.360doc.com',
+ 'web_name': '360doc个人图书馆',
+ 'world_rank': '366',
+ 'world_uv_rank': '289'}
+2019-Jun-09 17:29:27 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Eastday.com> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2019-Jun-09 17:29:27 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 27.188.72.54 proxy  ===
+2019-Jun-09 17:29:27 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 27.188.72.54 proxy  ===
+2019-Jun-09 17:29:27 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:29:27 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Eastday.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2019-Jun-09 17:29:32 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Rednet.cn> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:32 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.110.45.45 proxy  ===
+2019-Jun-09 17:29:32 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.110.45.45 proxy  ===
+2019-Jun-09 17:29:32 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://58.22.206.196:9000 】 =====
+2019-Jun-09 17:29:32 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Rednet.cn>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:37 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Gamersky.com> (failed 3 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:29:37 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 121.232.148.197 proxy  ===
+2019-Jun-09 17:29:37 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 121.232.148.197 proxy  ===
+2019-Jun-09 17:29:37 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://1.197.204.6:9999 】 =====
+2019-Jun-09 17:29:37 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Gamersky.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2019-Jun-09 17:29:38 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Ifeng.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:38 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 1.197.204.6 proxy  ===
+2019-Jun-09 17:29:38 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 1.197.204.6 proxy  ===
+2019-Jun-09 17:29:38 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://180.118.86.237:9999 】 =====
+2019-Jun-09 17:29:38 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Ifeng.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:38 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/17ok.com> (referer: http://www.alexa.cn/siterank/3)
+2019-Jun-09 17:29:38 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://115.29.3.37:80 】 =====
+2019-Jun-09 17:29:38 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:39 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=32ab104b4IJC1bQLXGLJJTIWDtqtT-DJZXy4rea-DABc3SASby3yD6x-GOy8X0kaH4-N&url=17ok.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:29:39 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:39 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=d15701d1lfT-G3d7HRXtX8Q0-GS9HrqGl4FH0Wq6LolMmHX23LPAuNtaZDVglqUYY-O&url=17ok.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:29:39 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:40 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=97b056585bO8q8M5vYKbG6mYZh5W-AzCEiq1pkMir6Te7wWVmmoOmlGFFPBgifwQ-M&url=17ok.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:29:40 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:29:40 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=949188c2-Bol8qldDW5NIvPpBVpnM1gIlMhomHeYGJ3xpuR-IGAaGONwtaOfmTdAY-M&url=17ok.com HTTP/1.1" 200 None
+2019-Jun-09 17:29:40 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/17ok.com>
+{'com_name': '北京网高科技股份有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '59',
+ 'create_day': '2002-08-06',
+ 'domain': '17ok.com',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '京ICP备09031787号-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.CNOLNIC.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.com17ok.com',
+ 'reg_server': 'XIAMEN CHINASOURCE INTERNET SERVICE CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=17ok.com',
+ 'server': 'WHOIS.CNOLNIC.COM',
+ 'server_ip': '120.133.17.148',
+ 'server_location': '北京市',
+ 'server_type': 'Apache',
+ 'web_home': 'www.17ok.com<br/>www.gubank.cn',
+ 'web_name': '财界网',
+ 'world_rank': '306',
+ 'world_uv_rank': '342'}
+2019-Jun-09 17:29:45 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Jrj.com.cn> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:45 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:45 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:29:45 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:29:45 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Jrj.com.cn>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:49 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Caijing.com.cn> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:29:49 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 27.188.64.70 proxy  ===
+2019-Jun-09 17:29:49 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 27.188.64.70 proxy  ===
+2019-Jun-09 17:29:49 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://101.200.50.18:8118 】 =====
+2019-Jun-09 17:29:50 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Caijing.com.cn>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:01 retry.py[line:75]/DEBUG/  Retrying <GET http://www.alexa.cn/Douban.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:01 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://114.230.69.191:9999 】 =====
+2019-Jun-09 17:30:05 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Zol.com.cn> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:05 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.110.45.45 proxy  ===
+2019-Jun-09 17:30:05 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 113.110.45.45 proxy  ===
+2019-Jun-09 17:30:05 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://119.254.94.71:39053 】 =====
+2019-Jun-09 17:30:05 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Zol.com.cn>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:13 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Tianya.cn> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:30:13 middlewares.py[line:19]/DEBUG/  =====  ProxyMiddleware get a random_proxy:【 http://36.250.156.152:9999 】 =====
+2019-Jun-09 17:30:13 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:13 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=b4f88a2bAuF-JYP5H4VBiqtw3KMMdT8ohPwvtQtfDyUNSUK-JY3RjNzQTgxOYsV3I-N&url=Tianya.cn&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:30:13 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:13 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=9be2ba1cVlH1SEawzm8AnlvtEQwQvPlBY8zGeuWJn1v-CoAcE9gTM17-Cv-FaRhIj0-L&url=Tianya.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:30:13 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:14 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=3cf31fa7gSK3cGX1oM96yyTNcnPPhw9GhrE-I5-D9v-IdKfRLWpyNHTj3sWyxvU02o-N&url=Tianya.cn&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:30:14 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:14 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=afe959202TmzdzpT2DlnF21mrG-J5SBKQ0oQClChL4Klvq-AckIK4pZIq2KJ9hrJ0-L&url=Tianya.cn HTTP/1.1" 200 None
+2019-Jun-09 17:30:14 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Tianya.cn>
+{'com_name': '天涯社区网络科技股份有限公司',
+ 'content_type': 'Content-Type: text/html; charset=UTF-8',
+ 'country_code': 'CN',
+ 'country_rank': '27',
+ 'create_day': '2003-03-17',
+ 'domain': 'tianya.cn',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '琼B2-20040038-1',
+ 'icp_type': '企业',
+ 'nserver': 'ns3.tianya.cn',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comTianya.cn',
+ 'reg_server': '厦门三五互联科技股份有限公司',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Tianya.cn',
+ 'server': 'WHOIS.CNNIC.CN',
+ 'server_ip': '221.182.218.229',
+ 'server_location': '海南省',
+ 'server_type': 'nginx',
+ 'web_home': 'www.tianya.cn',
+ 'web_name': '天涯社区',
+ 'world_rank': '89',
+ 'world_uv_rank': '102'}
+2019-Jun-09 17:30:15 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/3dmgame.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:15 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 58.22.206.196 proxy  ===
+2019-Jun-09 17:30:15 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 58.22.206.196 proxy  ===
+2019-Jun-09 17:30:15 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Jianshu.com> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:30:15 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/3dmgame.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:15 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:16 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=9ef45597leTpN17aYVrX29GbjQ-IyB50fRIN1SG1-IbHyrwaDKAKmUEH76Hh4RT5M-L&url=Jianshu.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:30:16 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:16 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=157b71beI693dov6WNTc6s0V6c0Ow-DrKtwS4hb2BFbnsyx-DggYpFy-I5xobjFwv4-K&url=Jianshu.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:30:16 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:16 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=0e273271ot9SIHApo5IADl6RCo-Helzh-EreFwdcnn-EYFDAc-H4IPwO3E8Xs7Zt-EuI-L&url=Jianshu.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:30:16 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:16 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=f9b4f63cp9e5DM1r6D3OHZlOiuWiYAltw7hzqNBB-F0kmE8Jjr8d-EV15-EYKcarj8-K&url=Jianshu.com HTTP/1.1" 200 None
+2019-Jun-09 17:30:16 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Jianshu.com>
+{'com_name': '上海佰集信息科技有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '34',
+ 'create_day': '2008-03-21',
+ 'domain': 'jianshu.com',
+ 'http_type': 'HTTP/1.1 301 Moved Permanently',
+ 'icp_no': '沪ICP备11018329号-5',
+ 'icp_type': '企业',
+ 'nserver': 'NS3.DNSV3.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comJianshu.com',
+ 'reg_server': 'NAME.COM, INC.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Jianshu.com',
+ 'server': 'WHOIS.NAME.COM',
+ 'server_ip': '140.205.16.113',
+ 'server_location': '浙江省杭州市',
+ 'server_type': 'Tengine',
+ 'web_home': 'www.jianshu.com',
+ 'web_name': '简书',
+ 'world_rank': '132',
+ 'world_uv_rank': '112'}
+2019-Jun-09 17:30:19 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Cnki.net> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:19 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 1.197.204.6 proxy  ===
+2019-Jun-09 17:30:19 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 1.197.204.6 proxy  ===
+2019-Jun-09 17:30:19 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Cnki.net>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:23 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/China.com.cn> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:23 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 180.118.86.237 proxy  ===
+2019-Jun-09 17:30:23 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 180.118.86.237 proxy  ===
+2019-Jun-09 17:30:23 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/China.com.cn>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:24 base.py[line:940]/DEBUG/  Looking for jobs to run
+2019-Jun-09 17:30:24 base.py[line:123]/INFO/  Running job "ProxyPoolWorker.__check_ip_availability_task (trigger: interval[0:10:00], next run at: 2019-06-09 17:30:24 CST)" (scheduled at 2019-06-09 17:30:24.610815+08:00)
+2019-Jun-09 17:30:24 base.py[line:144]/INFO/  Job "ProxyPoolWorker.__check_ip_availability_task (trigger: interval[0:10:00], next run at: 2019-06-09 17:30:24 CST)" executed successfully
+2019-Jun-09 17:30:24 base.py[line:1020]/DEBUG/  Next wakeup is due at 2019-06-09 17:40:24.610815+08:00 (in 599.997160 seconds)
+2019-Jun-09 17:30:25 logstats.py[line:48]/INFO/  Crawled 30 pages (at 4 pages/min), scraped 25 items (at 4 items/min)
+2019-Jun-09 17:30:28 engine.py[line:238]/DEBUG/  Crawled (200) <GET http://www.alexa.cn/Iqiyi.com> (referer: http://www.alexa.cn/siterank/2)
+2019-Jun-09 17:30:29 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:29 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/icp/info?token=6f295c31qsea7g0ajVBzcxce58i7aSXfeO6uK7kgKUJX5Sf0jWpnM1LaUZ79esM-L&url=Iqiyi.com&host=&vcode= HTTP/1.1" 200 None
+2019-Jun-09 17:30:29 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:29 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/server/get?token=0bcb4ec5HGG4h2JoF0aiCYHo5XbWnUPEA4732nbi1BvhPCNY2yUwC5RZCSn6qzI-L&url=Iqiyi.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:30:29 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:29 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/who_is/get?token=b7fb3717YCm8tdH2dAOqchqunrahh4kjLe9-HN7ZUo0KVDM4Y6BeqPr34tQJFFJ4-N&url=Iqiyi.com&force_update=0 HTTP/1.1" 200 None
+2019-Jun-09 17:30:29 connectionpool.py[line:205]/DEBUG/  Starting new HTTP connection (1): 127.0.0.1:1081
+2019-Jun-09 17:30:30 connectionpool.py[line:393]/DEBUG/  http://127.0.0.1:1081 "GET http://www.alexa.cn/api/alexa/free?token=1aa6e91escdRr-CN-IeMJOmhjmxH2y1AkBsr-IQTrFy55oMb2OKcpZqSQpIRIHCGsk-O&url=Iqiyi.com HTTP/1.1" 200 None
+2019-Jun-09 17:30:30 scraper.py[line:240]/DEBUG/  Scraped from <200 http://www.alexa.cn/Iqiyi.com>
+{'com_name': '北京爱奇艺科技有限公司',
+ 'content_type': 'Content-Type: text/html',
+ 'country_code': 'CN',
+ 'country_rank': '31',
+ 'create_day': '2010-07-12',
+ 'domain': 'iqiyi.com',
+ 'http_type': 'HTTP/1.1 200 OK',
+ 'icp_no': '京ICP备11032965号-1',
+ 'icp_type': '企业',
+ 'nserver': 'NS1.IQIYI.COM',
+ 'rank_trend_chart': 'http://traffic.alexa.com/graph?o=lt&y=q&b=ffffff&n=666666&f=999999&p=4e8cff&r=1y&t=2&z=0&c=1&h=150&w=340&u=qq.comIqiyi.com',
+ 'reg_server': 'ALIBABA CLOUD COMPUTING (BEIJING) CO., LTD.',
+ 'search_proportion_chart': 'http://traffic.alexa.com/graph?y=t&b=ffffff&n=666&f=999999&r=7d&t=2&z=30&c=1&h=280&w=920&u=Iqiyi.com',
+ 'server': 'GRS-WHOIS.HICHINA.COM',
+ 'server_ip': '111.206.13.66',
+ 'server_location': '北京市',
+ 'server_type': 'QWS',
+ 'web_home': 'www.iqiyi.com',
+ 'web_name': '爱奇艺',
+ 'world_rank': '107',
+ 'world_uv_rank': '107'}
+2019-Jun-09 17:30:32 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Sogou.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:32 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 36.250.156.152 proxy  ===
+2019-Jun-09 17:30:32 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 36.250.156.152 proxy  ===
+2019-Jun-09 17:30:32 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Sogou.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:39 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Douban.com> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:39 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:30:39 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 114.230.69.191 proxy  ===
+2019-Jun-09 17:30:40 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Douban.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:48 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Zhanqi.tv> (failed 3 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:30:48 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 36.250.156.152 proxy  ===
+2019-Jun-09 17:30:48 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 36.250.156.152 proxy  ===
+2019-Jun-09 17:30:48 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Zhanqi.tv>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2019-Jun-09 17:31:25 logstats.py[line:48]/INFO/  Crawled 31 pages (at 1 pages/min), scraped 26 items (at 1 items/min)
+2019-Jun-09 17:32:25 logstats.py[line:48]/INFO/  Crawled 31 pages (at 0 pages/min), scraped 26 items (at 0 items/min)
+2019-Jun-09 17:32:44 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Google.cn> (failed 3 times): User timeout caused connection failure: Getting http://www.alexa.cn/Google.cn took longer than 180.0 seconds..
+2019-Jun-09 17:32:44 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:32:44 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:32:44 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Google.cn>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\python\failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 352, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting http://www.alexa.cn/Google.cn took longer than 180.0 seconds..
+2019-Jun-09 17:32:51 retry.py[line:91]/DEBUG/  Gave up retrying <GET http://www.alexa.cn/Toutiao.com> (failed 3 times): User timeout caused connection failure: Getting http://www.alexa.cn/Toutiao.com took longer than 180.0 seconds..
+2019-Jun-09 17:32:51 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:32:51 proxyDBManager.py[line:181]/DEBUG/  ===  success to update 119.254.94.71 proxy  ===
+2019-Jun-09 17:32:51 scraper.py[line:208]/ERROR/  Error downloading <GET http://www.alexa.cn/Toutiao.com>
+Traceback (most recent call last):
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\python\failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\Users\JohnParker\Anaconda3\lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 352, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting http://www.alexa.cn/Toutiao.com took longer than 180.0 seconds..
+2019-Jun-09 17:32:51 engine.py[line:295]/INFO/  Closing spider (finished)
+2019-Jun-09 17:32:51 statscollectors.py[line:47]/INFO/  Dumping Scrapy stats:
+{'downloader/exception_count': 124,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 27,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 89,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 4,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 4,
+ 'downloader/request_bytes': 80834,
+ 'downloader/request_count': 160,
+ 'downloader/request_method_count/GET': 160,
+ 'downloader/response_bytes': 206930,
+ 'downloader/response_count': 36,
+ 'downloader/response_status_count/200': 31,
+ 'downloader/response_status_count/302': 2,
+ 'downloader/response_status_count/503': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 6, 9, 9, 32, 51, 361902),
+ 'item_scraped_count': 26,
+ 'log_count/DEBUG': 622,
+ 'log_count/ERROR': 34,
+ 'log_count/INFO': 23,
+ 'request_depth_max': 3,
+ 'response_received_count': 31,
+ 'retry/count': 94,
+ 'retry/max_reached': 33,
+ 'retry/reason_count/503 Service Unavailable': 3,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 20,
+ 'retry/reason_count/twisted.internet.error.TCPTimedOutError': 67,
+ 'retry/reason_count/twisted.internet.error.TimeoutError': 1,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 158,
+ 'scheduler/dequeued/memory': 158,
+ 'scheduler/enqueued': 158,
+ 'scheduler/enqueued/memory': 158,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2019, 6, 9, 9, 20, 25, 758830)}
+2019-Jun-09 17:32:51 engine.py[line:326]/INFO/  Spider closed (finished)
