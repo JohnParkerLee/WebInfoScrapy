@@ -9,8 +9,8 @@ from openpyxl import Workbook
 from openpyxl import load_workbook
 
 class UrlscrapyPipeline(object):
-    if os.path.exists('./tuniu.xlsx'):
-        wb = load_workbook("./tuniu.xlsx")
+    if os.path.exists('./UrlScrapyResu.xlsx'):
+        wb = load_workbook("./UrlScrapyResu.xlsx")
         ws = wb.active
     else:
         wb = Workbook()
@@ -26,7 +26,7 @@ class UrlscrapyPipeline(object):
                 item['world_rank'], item['world_uv_rank'], item['country_code'], item['country_rank'],
                 item['rank_trend_chart'], item['search_proportion_chart']]  # 把数据中每一项整理出来
         self.ws.append(line)  # 将数据以行的形式添加到xlsx中
-        self.wb.save('./tuniu.xlsx')  # 保存xlsx文件
+        self.wb.save('./UrlScrapyResu.xlsx')  # 保存xlsx文件
         print("OKKK---------------------------------------------------------------------")
         return item
 

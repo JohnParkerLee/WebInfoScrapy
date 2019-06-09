@@ -1,4 +1,0 @@
-2019-Jun-09 18:14:02 proxyDBManager.py[line:79]/DEBUG/  ===== 成功删除 proxy 表  =====
-2019-Jun-09 18:14:02 proxyDBManager.py[line:68]/DEBUG/  ===== 成功创建数据库 proxy 表 =====
-2019-Jun-09 18:14:02 retry.py[line:210]/DEBUG/  Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
-2019-Jun-09 18:14:02 retry.py[line:210]/DEBUG/  Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)

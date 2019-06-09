@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f84a629d-2f4c-456a-8245-277df01a2977" name="Default" comment="" />
+    <list default="true" id="f84a629d-2f4c-456a-8245-277df01a2977" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_164700.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_164745.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_164807.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_164837.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_165305.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_165345.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_170339.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_170923.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_171209.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_171520.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_171723.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_171949.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_172016.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_173419.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_173603.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_174953.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_175043.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_175549.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_175640.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_175743.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_175758.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_180136.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_180607.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_180815.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_181028.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_181034.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_181039.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_181151.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_181201.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_181402.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_181410.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_181841.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_20190609_181847.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuniu.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlScrapy/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/urlScrapy/pipelines.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +56,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProxyPoolWorker.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProxyPoolWorker.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proxyPool/ProxyPoolWorker.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
@@ -26,6 +64,45 @@
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startrun.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startrun.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+              <folding>
+                <element signature="e#25#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urlScrapy/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="46" column="45" lean-forward="true" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urlScrapy/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="70" column="69" lean-forward="true" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/urlScrapy/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -51,15 +128,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cursors.py" pinned="false" current-in-tab="false">
-        <entry file="file://E:/Users/JohnParker/Anaconda3/Lib/site-packages/pymysql/cursors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="973">
-              <caret line="169" selection-start-line="169" selection-end-line="169" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RandomUserAgentMiddleware.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proxyPool/scrapy/RandomUserAgentMiddleware.py">
           <provider selected="true" editor-type-id="text-editor" />
@@ -69,7 +137,7 @@
         <entry file="file://$PROJECT_DIR$/proxyPool/dbManager/proxyDBManager.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
               <folding>
                 <element signature="e#38#52#0" expanded="true" />
               </folding>
@@ -77,34 +145,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xiciSpider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxyPool/spiders/xiciSpider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-905">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxyPool/spiders/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="baseSpider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proxyPool/spiders/baseSpider.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxyPool/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -114,10 +161,12 @@
       <find>select_ip_num</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/urlScrapy/pipelines.py" />
         <option value="$PROJECT_DIR$/urlScrapy/items.py" />
         <option value="$PROJECT_DIR$/urlScrapy/middlewares.py" />
         <option value="$PROJECT_DIR$/urlScrapy/proxyPool/dbManager/proxyDBManager.py" />
@@ -139,6 +188,7 @@
         <option value="$PROJECT_DIR$/urlScrapy/settings.py" />
         <option value="$PROJECT_DIR$/proxyPool/spiders/kuaidailiSpider.py" />
         <option value="$PROJECT_DIR$/proxyPool/ProxyPoolWorker.py" />
+        <option value="$PROJECT_DIR$/urlScrapy/pipelines.py" />
       </list>
     </option>
   </component>
@@ -151,12 +201,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="360" />
-    <option name="y" value="167" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="300" />
+    <option name="y" value="-25" />
     <option name="width" value="1314" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -168,6 +219,11 @@
           <expand>
             <path>
               <item name="urlScrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlScrapy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="urlScrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlScrapy" type="462c0819:PsiDirectoryNode" />
               <item name="urlScrapy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -241,16 +297,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="288" y="134" width="1051" height="840" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3536932" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35021096" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" weight="0.4199438" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31923464" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2124665" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="SciView" />
@@ -387,37 +444,6 @@
     <entry file="file://$PROJECT_DIR$/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/urlScrapy/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urlScrapy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="70" column="69" lean-forward="true" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urlScrapy/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="46" column="45" lean-forward="true" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startrun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-          <folding>
-            <element signature="e#25#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proxyPool/spiders/data5uSpider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -460,7 +486,7 @@
     <entry file="file://$PROJECT_DIR$/proxyPool/spiders/baseSpider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
@@ -477,7 +503,7 @@
     <entry file="file://$PROJECT_DIR$/proxyPool/dbManager/proxyDBManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
           <folding>
             <element signature="e#38#52#0" expanded="true" />
           </folding>
@@ -494,6 +520,37 @@
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startrun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urlScrapy/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="46" column="45" lean-forward="true" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urlScrapy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="70" column="69" lean-forward="true" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urlScrapy/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
         </state>
       </provider>
     </entry>

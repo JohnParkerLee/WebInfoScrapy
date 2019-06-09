@@ -1,2 +1,0 @@
-2019-Jun-09 16:47:20 log.py[line:146]/INFO/  Scrapy 1.6.0 started (bot: urlScrapy)
-2019-Jun-09 16:47:21 log.py[line:149]/INFO/  Versions: lxml 4.3.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:18:50) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.6.1, Platform Windows-10-10.0.17134-SP0
